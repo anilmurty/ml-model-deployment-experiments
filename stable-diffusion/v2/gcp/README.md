@@ -83,7 +83,7 @@ Here is the CLI reference:
 
 1. You can perform some pre-checks of your HW, OS and packages first:
    ```console
-    # verify you have a CIDA-capable GPU (check against http://developer.nvidia.com/cuda-gpus)
+    # verify you have a CUDA-capable GPU (check against http://developer.nvidia.com/cuda-gpus)
     $ lspci | grep -i nvidia
     00:04.0 3D controller: NVIDIA Corporation TU104GL [Tesla T4] (rev a1)
 
