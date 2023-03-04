@@ -120,7 +120,7 @@ Here is the CLI reference:
 
    ```
 2. Install CUDA toolkit
-   ```
+   ```console
    $ wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-debian10-12-1-local_12.1.0-530.30.02-1_amd64.deb
    
    $ sudo dpkg -i cuda-repo-debian10-12-1-local_12.1.0-530.30.02-1_amd64.deb
@@ -134,7 +134,7 @@ Here is the CLI reference:
    $ sudo apt-get -y install cuda
    ```
 3. Install Nvidia Container Toolkit
-   ```
+   ```console
    $ distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
       && curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
       && curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
@@ -151,7 +151,7 @@ Here is the CLI reference:
    ```
 4. Verify by testing running a base CUDA container from https://hub.docker.com/r/nvidia/cuda
    
-   ```
+   ```console
    $ sudo docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
 
    Sat Mar  4 03:08:45 2023       
@@ -181,27 +181,27 @@ Here is the CLI reference:
 ### Setting up Cog, Stable Diffusion & Huggingface weights
 
 1. Clone the Cog & Stable Diffusion repos on the VM
-   ```
+   ```console
    $ git clone https://github.com/replicate/cog
 
    $ git clone https://github.com/replicate/cog-stable-diffusion
    
 2. Install Cog
-3. ```
+3. ```console
     $ sudo curl -o /usr/local/bin/cog -L https://github.com/replicate/cog/releases/latest/download/cog_`uname -s`_`uname -m`
    ```
 4.  Build Stable Diffusion docker image using Cog
-    ```
+    ```console
     $ cd cog-stable-diffusion/
 
     $ cog build
     ```
 5.  Download weights for the model from huggingface (replace with your [huggingface user auth token](https://huggingface.co/settings/tokens))
-    ```
+    ```console
     $ cog run script/download-weights <huggingface-auth-token from https://huggingface.co/settings/tokens>
     ```
 6.  Run predictions!
-    ```
+    ```console
     anilmurty@sd-instance-3:~/cog-stable-diffusion$ cog predict -i prompt="portland oregon on mars"
     Building Docker image from environment in cog.yaml...
     [+] Building 0.7s (18/18) FINISHED                                                                                                                                                                    
@@ -295,7 +295,7 @@ Here is the CLI reference:
 
     Note that the output image is located in the same directory in a file called "output.0.png"
      
-    ```
+    ```console
     anilmurty@sd-instance-3:~/cog-stable-diffusion$ ls
     LICENSE  README.md  __pycache__  cog.yaml  diffusers-cache  output.0.png  predict.py  script
 
