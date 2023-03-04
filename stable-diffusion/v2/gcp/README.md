@@ -8,6 +8,12 @@ This is a reference for deploying Stable Diffusion v2 to GCP. It makes use of th
 Before we get into the details, here's what this will let you do :)
 
 
+
+https://user-images.githubusercontent.com/19495789/222873641-856ba583-d0f2-4f17-8dec-f00208cc7e3b.mp4
+
+
+
+
 ## Prerequisites
 
 1. Access to a GCP account and GPU instances (may need to request this manually if they are not available by default)
