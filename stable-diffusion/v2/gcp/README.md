@@ -2,7 +2,7 @@
 This is a reference for deploying Stable Diffusion v2 to GCP. It makes use of the following:
 
 - Cog: https://github.com/replicate/cog (which is essentially a wrapper over docker for generating container images from ML models)
-- Stable Diffusion v2: There are many forks but I stuck with the base one for this https://github.com/replicate/cog-stable-diffusion
+- Stable Diffusion v2: There are many forks but I stuck with the base (https://huggingface.co/stabilityai/stable-diffusion-2) one for this
 - [Huggingface.co](https://huggingface.co/): This is like the Github for AI/ ML and has a ton of models as well as data sets for training and inference.
 
 Before we get into the details, here's what this will let you do :)
