@@ -4,12 +4,8 @@ Hello! - thanks for checking out this repo. I made this to store any notes from 
 
 ## Organization
 
-Root
- - <ML Model>
-   - <Version>
-     - <Cloud PLatform>
-       - <README.md>
+Root | ML Model | Version | Cloud PLatform | README
      
-e.g stable-diffusionv1 on google cloud is under ../stable-diffusion/v1/gcp/README.md
+e.g Stable Diffusion V2 deployed on Google Cloud is under ../stable-diffusion/v1/gcp/README.md
 
 Enjoy!
