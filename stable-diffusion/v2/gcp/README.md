@@ -19,6 +19,7 @@ https://user-images.githubusercontent.com/19495789/222873641-856ba583-d0f2-4f17-
 1. Access to a GCP account and GPU instances (may need to request this manually if they are not available by default)
 2. SSH configured so you can access your Google VM from the command line
 3. [Huggingface](https://huggingface.co/) account with [User Access Token](https://huggingface.co/settings/tokens) created. We will get weights for running inference from here.
+4. VSCode with the [SSH Remote Host Extension](https://code.visualstudio.com/docs/remote/ssh) (if you prefer to edit files in an editor, over vi/ vim in GCP CLI).
 
 
 ## Steps
