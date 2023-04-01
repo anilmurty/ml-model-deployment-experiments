@@ -16,6 +16,10 @@ This is what it will make use of:
 Here is what the final result will look like:
 
 
+https://user-images.githubusercontent.com/19495789/229261329-ee05ac20-c40f-495e-bbb2-778e599321d6.mp4
+
+
+
 ## Prerequisites
 
 1. Access to a GCP account and GPU instances (may need to request this manually if they are not available by default)
