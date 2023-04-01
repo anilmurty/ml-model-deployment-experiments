@@ -11,6 +11,7 @@ This is what it will make use of:
 1. Deepsparse: https://github.com/neuralmagic/deepsparse -- Open source software from Neural Magic, Inc. that is "A sparsity-aware inference runtime that delivers GPU-class performance on commodity CPUs, purely in software, anywhere."
 2. Uvicorn Server
 3. Fast API
+4. Swagger UI (to show API documentation)
 4. Models and Datasets from: https://huggingface.co/neuralmagic
 
 Here is what the final result will look like:
